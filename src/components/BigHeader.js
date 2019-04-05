@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 
 const HeaderBackground = styled.div`
-  background: #ff709f;
+  background: white;
 `;
 
 const Header = styled.h1`
-  font-size: 10rem;
+  font-size: 15rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   color: #206be5;
