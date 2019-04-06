@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BigHeader } from './components/BigHeader';
 import { NavigationBar } from './components/NavBar';
-import { Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './App.scss';
 
 class App extends Component {
@@ -10,7 +10,26 @@ class App extends Component {
             <>
             <NavigationBar/>
             <BigHeader/>
-            <h1>This web site is now under construction.</h1>
+
+            <>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h1>About us</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <h1>IoTでビッグデータをAIしてBlockchain</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>1 of 3</Col>
+                        <Col>2 of 3</Col>
+                        <Col>3 of 3</Col>
+                    </Row>
+                </Container>
+            </>
             </>
         );
     }
