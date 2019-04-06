@@ -1,12 +1,27 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+
+
+
+const NCNavBar = styled(Navbar)`
+  background: white !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  height: 4.5rem;
+`;
+
+const NCBrand = styled(Navbar.Brand)`
+  font-size: 1.5rem;
+`;
 
 
 export class NavigationBar extends Component {
   render() {
     return (
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">NECO</Navbar.Brand>
+        <NCNavBar bg="light" expand="lg">
+            <NCBrand href="#home">NECO</NCBrand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -21,7 +36,7 @@ export class NavigationBar extends Component {
                     </NavDropdown>
                 </Nav>
               </Navbar.Collapse>
-          </Navbar>
+          </NCNavBar>
     );
   }
 }
