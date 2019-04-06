@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BigHeader } from './components/BigHeader';
 import { NavigationBar } from './components/NavBar';
+import { Button } from 'react-bootstrap';
 import './App.scss';
 
 class App extends Component {
