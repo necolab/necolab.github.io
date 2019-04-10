@@ -9,18 +9,20 @@ import './App.scss';
 const Heading = styled.h1`
     font-size: 7rem;
     font-weight: bold;
+    letter-spacing: 5px;
     font-family: 'Noto Sans JP', sans-serif;
 `;
 
 const Highlight = styled.span`
-    color: red;
+    color: white;
+    background: #3b3c3f;
 `;
 
 class App extends Component {
 
     componentDidMount() {
         var hostName = document.location.hostname;
-        if  ( hostName == "localhost" || hostName == "127.0.0.1" ) {
+        if  ( hostName === "localhost" || hostName === "127.0.0.1" ) {
             console.log("THIS IS DEBUG!");
         } else {
             alert("ただいま、このページは更新中です。お手数おかけして申し訳ございません。");
