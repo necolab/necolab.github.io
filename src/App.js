@@ -49,9 +49,9 @@ class App extends Component {
                         <Col>
                             <Heading>
                                 <Line padding="20px"><Highlight>情報技術</Highlight>を用いて<br/></Line>
-                                <Line padding="90px">社会の<br/></Line>
+                                <Line padding="150px">社会の<br/></Line>
                                 <Line padding="20px"><Highlight>問題</Highlight>の<Highlight>解決策</Highlight>を<br/></Line>
-                                <Line padding="300px">実践していく</Line>
+                                <Line padding="320px">実践していく</Line>
                             </Heading>
                         </Col>
                     </Row>
