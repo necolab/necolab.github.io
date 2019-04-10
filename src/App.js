@@ -8,9 +8,16 @@ import './App.scss';
 
 const Heading = styled.h1`
     font-size: 7rem;
+    line-height: 11rem;
+    word-break : normal;
     font-weight: bold;
     letter-spacing: 5px;
     font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 50px;
+`;
+
+const Line = styled.span`
+    padding-left: ${props => props.padding};
 `;
 
 const Highlight = styled.span`
@@ -41,8 +48,10 @@ class App extends Component {
                     <Row>
                         <Col>
                             <Heading>
-                                <Highlight>情報技術</Highlight>
-                                を用いて社会の中にある<Highlight>問題</Highlight>に対する<Highlight>解決策</Highlight>を実践していく
+                                <Line padding="20px"><Highlight>情報技術</Highlight>を用いて<br/></Line>
+                                <Line padding="90px">社会の<br/></Line>
+                                <Line padding="20px"><Highlight>問題</Highlight>の<Highlight>解決策</Highlight>を<br/></Line>
+                                <Line padding="300px">実践していく</Line>
                             </Heading>
                         </Col>
                     </Row>
