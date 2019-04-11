@@ -4,9 +4,10 @@ import { BigHeader } from './components/BigHeader';
 import { NavigationBar } from './components/NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
 import './App.scss';
+import logo from './assets/necolab.png';
 
 
-const Heading = styled.h1`
+const MegaHeading = styled.h1`
     font-size: 7rem;
     line-height: 11rem;
     word-break : normal;
@@ -23,7 +24,30 @@ const Line = styled.span`
 const Highlight = styled.span`
     color: white;
     background: #3b3c3f;
+    transition: all .3s;
+
+    &:hover {
+        background: #206be5;
+        font-size: 7.5rem;
+    }
 `;
+
+
+const Heading = styled.h1`
+    font-size: 5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+`;
+
+const LogoImg = styled.img`
+    width: 80%;
+    margin: 0 auto;
+    margin: 8rem;
+    margin-top: 5rem;
+`;
+
+
 
 class App extends Component {
 
@@ -41,27 +65,29 @@ class App extends Component {
         return (
             <>
             <NavigationBar/>
-            <BigHeader/>
-
-            <>
+            <LogoImg src={logo}/>
+        
                 <Container>
                     <Row>
                         <Col>
-                            <Heading>
+                            <MegaHeading>
                                 <Line padding="20px"><Highlight>情報技術</Highlight>を用いて<br/></Line>
                                 <Line padding="150px">社会の<br/></Line>
                                 <Line padding="20px"><Highlight>問題</Highlight>の<Highlight>解決策</Highlight>を<br/></Line>
                                 <Line padding="320px">実践していく</Line>
-                            </Heading>
+                            </MegaHeading>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Heading>PROJECTS</Heading>
                         </Col>
                     </Row>
                     <Row>
                         <Col>1 of 3</Col>
                         <Col>2 of 3</Col>
-                        <Col>3 of 3</Col>
                     </Row>
                 </Container>
-            </>
             </>
         );
     }
