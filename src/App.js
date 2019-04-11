@@ -87,6 +87,15 @@ class App extends Component {
                         <Col>1 of 3</Col>
                         <Col>2 of 3</Col>
                     </Row>
+                    <Row>
+                        <Col>
+                            <Heading>MEMBERS</Heading>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>1 of 3</Col>
+                        <Col>2 of 3</Col>
+                    </Row>
                 </Container>
             </>
         );
