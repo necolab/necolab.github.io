@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { BigHeader } from './components/BigHeader';
+import { Card } from './components/Cards';
 import { NavigationBar } from './components/NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
 import './App.scss';
@@ -15,6 +15,11 @@ const MegaHeading = styled.h1`
     letter-spacing: 5px;
     font-family: 'Noto Sans JP', sans-serif;
     margin-top: 50px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
 `;
 
 const Line = styled.span`
@@ -30,6 +35,12 @@ const Highlight = styled.span`
         background: #206be5;
         font-size: 7.5rem;
     }
+
+    @media screen and (max-width: 800px) {
+        &:hover {
+            font-size: 4.5rem;
+        }
+    }
 `;
 
 
@@ -38,6 +49,10 @@ const Heading = styled.h1`
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     margin-top: 2rem;
+
+    @media screen and (max-width: 800px) {
+        font-size: 2.5rem;
+    }
 `;
 
 const LogoImg = styled.img`
@@ -84,12 +99,30 @@ class App extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>1 of 3</Col>
-                        <Col>2 of 3</Col>
+                        <Col>
+                            <Card up><h1>AAA</h1></Card>
+                        </Col>
+                        <Col>
+                            <Card down><h1>AAA</h1></Card>
+                        </Col>
                     </Row>
                     <Row>
                         <Col>
                             <Heading>MEMBERS</Heading>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Card><h1>AAA</h1></Card>
+                        </Col>
+                        <Col>
+                            <Card><h1>AAA</h1></Card>
+                        </Col>
+                    </Row>
+
+                    <Row>
+                        <Col>
+                            <Heading>CONTACT</Heading>
                         </Col>
                     </Row>
                     <Row>
