@@ -72,7 +72,6 @@ class App extends Component {
             console.log("THIS IS DEBUG!");
         } else {
             alert("ただいま、このページは更新中です。お手数おかけして申し訳ございません。");
-            alert("NECOの履修に関しては4/11のRG合同説明会へ起こしください。");
         }
     }
 
