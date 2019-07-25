@@ -14,7 +14,6 @@ const MegaHeading = styled.h1`
     word-break : normal;
     font-weight: bold;
     letter-spacing: 5px;
-    font-family: 'Noto Sans JP', sans-serif;
     margin-top: 50px;
 
     @media screen and (max-width: 800px) {
@@ -22,6 +21,18 @@ const MegaHeading = styled.h1`
         line-height: 6rem;
     }
 `;
+
+const MegaHeadingHighlight = styled.span`
+    color: white;
+    background: blue;
+`;
+
+
+const DescHeading = styled.h2`
+    font-weight: bold;
+`;
+
+
 
 const Line = styled.span`
     padding-left: ${props => props.padding};
@@ -95,11 +106,14 @@ class App extends Component {
                     <Row>
                         <Col>
                             <MegaHeading>
-                                <Line padding="20px"><Highlight>情報技術</Highlight>を用いて<br/></Line>
-                                <Line padding="150px">社会の<br/></Line>
-                                <Line padding="20px"><Highlight>問題</Highlight>の<Highlight>解決策</Highlight>を<br/></Line>
-                                <Line padding="320px">実践していく</Line>
+                                <MegaHeadingHighlight>NE</MegaHeadingHighlight>tworking
                             </MegaHeading>
+                            <MegaHeading>
+                                <MegaHeadingHighlight>CO</MegaHeadingHighlight>llaboration
+                            </MegaHeading>
+                            <DescHeading>
+                            NECO Lab.は「技術」と「社会」の両方の側面を繋いで(networking)、SFCだからこそ出来る研究を共創する(collaboration)のための研究グループです。
+                            </DescHeading>
                         </Col>
                     </Row>
                     <Row>
