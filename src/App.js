@@ -86,7 +86,6 @@ class App extends Component {
     render() {
         return (
             <>
-            <NavigationBar/>
 
             <LogoImg type="image/svg+xml" data={logoBg}></LogoImg>
             <LineImg type="image/svg+xml" data={line}></LineImg>

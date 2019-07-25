@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="2261px" height="525px" viewBox="0 0 2261 525" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="2201px" height="274px" viewBox="0 0 2201 274" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
+    <title>Group 5</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-        <g id="Group" transform="translate(1131.184144, 262.347265) rotate(-1.000000) translate(-1131.184144, -262.347265) translate(18.684144, -187.652735)" stroke-width="35">
-            <path d="M2196.87026,112.882865 L24.1522367,688.652839" id="Line" stroke="#FC6363" transform="translate(1110.652237, 400.652839) rotate(6.000000) translate(-1110.652237, -400.652839) "></path>
-            <path d="M2196.87026,165.222507 L24.1522367,740.992481" id="Line" stroke="#4A90E2" transform="translate(1110.652237, 452.992481) rotate(6.000000) translate(-1110.652237, -452.992481) "></path>
-            <path d="M2199.87026,212.222507 L27.1522367,787.992481" id="Line" stroke="#FEC15D" transform="translate(1113.652237, 499.992481) rotate(6.000000) translate(-1113.652237, -499.992481) "></path>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="2201" height="368"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(0.000000, -47.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill-opacity="0" fill="#FFFFFF" xlink:href="#path-1"></use>
+            <g id="Group" mask="url(#mask-2)" stroke-linecap="square" stroke-width="30">
+                <g transform="translate(1104.860358, 183.311298) rotate(5.000000) translate(-1104.860358, -183.311298) translate(-7.139642, -264.688702)" id="Line">
+                    <path d="M2196.87026,112.882865 L24.1522367,688.652839" stroke="#FF4141" transform="translate(1110.652237, 400.652839) rotate(6.000000) translate(-1110.652237, -400.652839) "></path>
+                    <path d="M2196.87026,161.109493 L24.1522367,736.879467" stroke="#3994FF" transform="translate(1110.652237, 448.879467) rotate(6.000000) translate(-1110.652237, -448.879467) "></path>
+                    <path d="M2199.02679,208.010874 L26.3087632,783.780847" stroke="#FFA312" transform="translate(1112.808763, 495.780847) rotate(6.000000) translate(-1112.808763, -495.780847) "></path>
+                </g>
+            </g>
         </g>
     </g>
 </svg>
