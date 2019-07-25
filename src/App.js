@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Card } from './components/Cards';
-import { NavigationBar } from './components/NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
+import Lottie from "react-lottie";
 import './App.scss';
 import logoBg from './assets/NECO_BG.svg';
 import line from './assets/neco_line.svg';
+import animationData from "./data/anim.json";
+
 
 
 const MegaHeading = styled.h1`
-    font-size: 7rem;
+    font-size: 9rem;
     line-height: 11rem;
     word-break : normal;
     font-weight: bold;
     letter-spacing: 5px;
     margin-top: 50px;
+    color: #262626;
 
     @media screen and (max-width: 800px) {
         font-size: 4rem;
@@ -23,8 +26,13 @@ const MegaHeading = styled.h1`
 `;
 
 const MegaHeadingHighlight = styled.span`
-    color: white;
-    background: blue;
+
+    &:hover {
+        color: white;
+    background: #0449C6;
+    padding: 10px;
+    border-radius: 10px;
+    }
 `;
 
 
@@ -82,6 +90,15 @@ const LineImg = styled.object`
 
 
 
+const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+};
+
 
 class App extends Component {
 
@@ -106,11 +123,13 @@ class App extends Component {
                     <Row>
                         <Col>
                             <MegaHeading>
-                                <MegaHeadingHighlight>NE</MegaHeadingHighlight>tworking
+                                <MegaHeadingHighlight>Ne</MegaHeadingHighlight>tworking
                             </MegaHeading>
                             <MegaHeading>
-                                <MegaHeadingHighlight>CO</MegaHeadingHighlight>llaboration
+                                <MegaHeadingHighlight>Co</MegaHeadingHighlight>llaboration
                             </MegaHeading>
+                            <Lottie options={defaultOptions} height={500} width={500} />
+
                             <DescHeading>
                             NECO Lab.は「技術」と「社会」の両方の側面を繋いで(networking)、SFCだからこそ出来る研究を共創する(collaboration)のための研究グループです。
                             </DescHeading>
