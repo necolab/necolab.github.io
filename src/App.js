@@ -4,7 +4,8 @@ import { Card } from './components/Cards';
 import { NavigationBar } from './components/NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
 import './App.scss';
-import logo from './assets/necolab.png';
+import logoBg from './assets/NECO_BG.svg';
+import line from './assets/neco_line.svg';
 
 
 const MegaHeading = styled.h1`
@@ -55,12 +56,19 @@ const Heading = styled.h1`
     }
 `;
 
-const LogoImg = styled.img`
+const LogoImg = styled.object`
     width: 80%;
     margin: 0 auto;
     margin: 8rem;
     margin-top: 5rem;
 `;
+
+
+const LineImg = styled.object`
+    width: 100%;
+    overflow: hidden;
+`;
+
 
 
 
@@ -80,8 +88,11 @@ class App extends Component {
         return (
             <>
             <NavigationBar/>
-            <LogoImg src={logo}/>
-        
+
+            <LogoImg type="image/svg+xml" data={logoBg}></LogoImg>
+            <LineImg type="image/svg+xml" data={line}></LineImg>
+
+
                 <Container>
                     <Row>
                         <Col>
@@ -100,10 +111,10 @@ class App extends Component {
                     </Row>
                     <Row>
                         <Col>
-                            <Card up><h1>AAA</h1></Card>
+                            <Card up><h1>ここに乗る人募集中！</h1></Card>
                         </Col>
                         <Col>
-                            <Card down><h1>AAA</h1></Card>
+                            <Card down><h1>ここに乗る人募集中！</h1></Card>
                         </Col>
                     </Row>
                     <Row>
@@ -113,10 +124,10 @@ class App extends Component {
                     </Row>
                     <Row>
                         <Col>
-                            <Card><h1>AAA</h1></Card>
+                            <Card down><h1>あとで、プロフィール提出させます。</h1></Card>
                         </Col>
                         <Col>
-                            <Card><h1>AAA</h1></Card>
+                            <Card up><h1>考えておいてください！！！！！</h1></Card>
                         </Col>
                     </Row>
 
@@ -126,8 +137,16 @@ class App extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>1 of 3</Col>
-                        <Col>2 of 3</Col>
+                        <Col up>
+                            <h1>
+                                Q&Aとかいるかなあ？
+                            </h1>
+                        </Col>
+                        <Col down>
+                            <h1>
+                                過去のNECOサイトには男女比の質問があったらしい
+                            </h1>
+                        </Col>
                     </Row>
                 </Container>
             </>
