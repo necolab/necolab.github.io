@@ -1,27 +1,46 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Card } from './components/Cards';
-import { NavigationBar } from './components/NavBar';
 import { Container, Row, Col } from 'react-bootstrap';
+import Lottie from "react-lottie";
 import './App.scss';
 import logoBg from './assets/NECO_BG.svg';
 import line from './assets/neco_line.svg';
+import animationData from "./data/anim.json";
+
 
 
 const MegaHeading = styled.h1`
-    font-size: 7rem;
+    font-size: 9rem;
     line-height: 11rem;
     word-break : normal;
     font-weight: bold;
     letter-spacing: 5px;
-    font-family: 'Noto Sans JP', sans-serif;
     margin-top: 50px;
+    color: #262626;
 
     @media screen and (max-width: 800px) {
         font-size: 4rem;
         line-height: 6rem;
     }
 `;
+
+const MegaHeadingHighlight = styled.span`
+
+    &:hover {
+        color: white;
+    background: #0449C6;
+    padding: 10px;
+    border-radius: 10px;
+    }
+`;
+
+
+const DescHeading = styled.h2`
+    font-weight: bold;
+`;
+
+
 
 const Line = styled.span`
     padding-left: ${props => props.padding};
@@ -71,6 +90,15 @@ const LineImg = styled.object`
 
 
 
+const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+};
+
 
 class App extends Component {
 
@@ -86,7 +114,6 @@ class App extends Component {
     render() {
         return (
             <>
-            <NavigationBar/>
 
             <LogoImg type="image/svg+xml" data={logoBg}></LogoImg>
             <LineImg type="image/svg+xml" data={line}></LineImg>
@@ -96,11 +123,16 @@ class App extends Component {
                     <Row>
                         <Col>
                             <MegaHeading>
-                                <Line padding="20px"><Highlight>情報技術</Highlight>を用いて<br/></Line>
-                                <Line padding="150px">社会の<br/></Line>
-                                <Line padding="20px"><Highlight>問題</Highlight>の<Highlight>解決策</Highlight>を<br/></Line>
-                                <Line padding="320px">実践していく</Line>
+                                <MegaHeadingHighlight>Ne</MegaHeadingHighlight>tworking
                             </MegaHeading>
+                            <MegaHeading>
+                                <MegaHeadingHighlight>Co</MegaHeadingHighlight>llaboration
+                            </MegaHeading>
+                            <Lottie options={defaultOptions} height={500} width={500} />
+
+                            <DescHeading>
+                            NECO Lab.は「技術」と「社会」の両方の側面を繋いで(networking)、SFCだからこそ出来る研究を共創する(collaboration)のための研究グループです。
+                            </DescHeading>
                         </Col>
                     </Row>
                     <Row>
