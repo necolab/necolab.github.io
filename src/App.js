@@ -57,7 +57,7 @@ const Heading = styled.h1`
 `;
 
 const LogoImg = styled.object`
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     margin: 8rem;
     margin-top: 5rem;
