@@ -42,26 +42,7 @@ const DescHeading = styled.h2`
 
 
 
-const Line = styled.span`
-    padding-left: ${props => props.padding};
-`;
 
-const Highlight = styled.span`
-    color: white;
-    background: #3b3c3f;
-    transition: all .3s;
-
-    &:hover {
-        background: #206be5;
-        font-size: 7.5rem;
-    }
-
-    @media screen and (max-width: 800px) {
-        &:hover {
-            font-size: 4.5rem;
-        }
-    }
-`;
 
 
 const Heading = styled.h1`
@@ -76,7 +57,7 @@ const Heading = styled.h1`
 `;
 
 const LogoImg = styled.object`
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     margin: 8rem;
     margin-top: 5rem;
