@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, NavBrand } from './components/Navbar';
 import { Header } from './components/Header';
+import { Footer, FooterCopyright } from './components/Footer';
 import './App.css';
 
 const App = () => {
@@ -16,6 +17,9 @@ const App = () => {
         </p>
       </Header>
       <p>Hello, world</p>
+      <Footer>
+        <FooterCopyright />
+      </Footer>
     </React.Fragment>
   );
 }
